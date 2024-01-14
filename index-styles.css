@@ -10,7 +10,7 @@ body {
 /* HEADER */
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   background-color: transparent;
@@ -19,6 +19,11 @@ header {
   justify-content: space-between;
   align-items: center;
   color: #fff;
+  background: linear-gradient(
+    to bottom,
+    #2c2d32,
+    transparent
+  );
 }
 
 #logo, #nav-list {
