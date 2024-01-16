@@ -7,6 +7,17 @@ body {
   color: #333;
 }
 
+/* FOOTER */
+
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  vertical-align: middle;
+}
+footer p {
+  margin: 0.3em;
+}
+
 /* HEADER */
 
 header {
