@@ -63,32 +63,40 @@ header {
 }
 
 /* Brackets go out */
-#nav-list>ul li:before, #nav-list>ul li:after {
+#nav-list li {
+  position: relative;
+}
+
+#nav-list a:before, #nav-list a:after
+{
     position: absolute;
     opacity: 0;
-    font-size: 35px;
-    top: 0px;
+    top: -3px;
+    font-weight: 800;
+    font-size: 1.2em;
     transition: all 0.3s;
 }
 
-#nav-list>ul li:before
+#nav-list a:before
 {
-    content: '(';
-    left: 0px;
+    content: '<';
+    left: -15px;
     transform: translateX(10px);
 }
 
-#nav-list>ul li:after
+#nav-list a:after
 {
-    content: ')';
-    right: 0px;
+    content: '>';
+    right: -15px;
     transform: translateX(-10px);
 }
 
-#nav-list>ul li:hover:before, #nav-list>ul li:hover:after
+#nav-list a:hover:before, #nav-list a:hover:after
 {
     opacity: 1;
     transform: translateX(0px);
+    font-weight: 800;
+    font-size: 1.2em;
 }
 
 /* SECTIONS */
