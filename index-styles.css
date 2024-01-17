@@ -126,16 +126,19 @@ header {
   font-size: 2em;
   margin: 0;
 }
-#home-content img {
+#home-content #card-img {
   height: 6em;
-  transition: all 1s ease;
+  transition: all 0.36s ease;
   border-radius: 20px;
   box-shadow: 0 0 12px 5px rgba(162, 224, 247, 0.4);
 }
-#home-content img:hover {
-  height: 7em;
-  box-shadow: 0 0 15px 10px rgba(162, 224, 247, 0.7);
+#home-content #card-img:hover {
+  /* transform: scale(1.2); */
+  transform: perspective(900px) translateY(7.5%) rotateX(50deg) translateZ(0);
+  filter: brightness(50%);
+  /* box-shadow: 0 0 15px 10px rgba(162, 224, 247, 0.7); */
 }
+
 #home-content h1, #home-content p {
   margin: 0;
 }
