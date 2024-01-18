@@ -146,7 +146,7 @@ header {
   position: absolute;
   left: 0;
   top: 0;
-  transform: scale(1.1, 1.1) translateX(7%) translateY(0%);
+  transform: scale(1.1, 1.1) translateX(7%) translateY(3%);
   mask-image: linear-gradient(to top, transparent 0%, white 7%);
 }
 #home-content #card-hover:hover > #card-img {
@@ -155,7 +155,7 @@ header {
 }
 #home-content #card-hover:hover > #png-img {
   opacity: 1;
-  transform: scale(1.1, 1.1) translateX(7%) translateY(-6.9%);
+  transform: scale(1.1, 1.1) translateX(7%) translateY(-10%);
 }
 
 #home-content h1, #home-content p {
