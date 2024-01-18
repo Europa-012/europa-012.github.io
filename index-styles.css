@@ -133,10 +133,8 @@ header {
   box-shadow: 0 0 12px 5px rgba(162, 224, 247, 0.4);
 }
 #home-content #card-img:hover {
-  /* transform: scale(1.2); */
   transform: perspective(900px) translateY(7.5%) rotateX(50deg) translateZ(0);
   filter: brightness(50%);
-  /* box-shadow: 0 0 15px 10px rgba(162, 224, 247, 0.7); */
 }
 
 #home-content h1, #home-content p {
@@ -146,7 +144,7 @@ header {
   font-size: 0.74em;
 }
 
-/* extras */
+/* sections */
 
 .section {
   padding: 2rem;
