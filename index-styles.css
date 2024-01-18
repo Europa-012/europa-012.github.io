@@ -122,20 +122,40 @@ header {
   justify-content: center;
 }
 #home-content {
-  /* background-color: rgba(10, 10, 10, 0.2); */
   text-align: center;
   font-size: 2em;
   margin: 0;
 }
-#home-content #card-img {
+
+/* CARD HOVER EFFECT */
+#home-content .card {
   height: 6em;
   transition: all 0.36s ease;
+}
+#home-content #card-hover {
+  /* background-color: lightblue; */
+  position: relative;
+}
+#home-content #card-img {
   border-radius: 20px;
   box-shadow: 0 0 12px 5px rgba(162, 224, 247, 0.4);
+  /* opacity: 0; */
 }
-#home-content #card-img:hover {
-  transform: perspective(900px) translateY(7.5%) rotateX(50deg) translateZ(0);
-  filter: brightness(50%);
+#home-content #png-img {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(1.1, 1.1) translateX(7%) translateY(0%);
+  mask-image: linear-gradient(to top, transparent 0%, white 7%);
+}
+#home-content #card-hover:hover > #card-img {
+  transform: perspective(900px) translateY(9.7%) rotateX(50deg) translateZ(0);
+  filter: brightness(33%);
+}
+#home-content #card-hover:hover > #png-img {
+  opacity: 1;
+  transform: scale(1.1, 1.1) translateX(7%) translateY(-6.9%);
 }
 
 #home-content h1, #home-content p {
@@ -207,6 +227,7 @@ header {
     display: none;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .section {
     font-size: 1.2em;
