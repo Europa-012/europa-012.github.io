@@ -212,9 +212,11 @@ header {
     display: none;
   }
   .content {
-    flex-direction: column-reverse;
     row-gap: 50px;
     column-gap: 0;
+  }
+  #home-content {
+    flex-direction: column-reverse;
   }
 }
 @media screen and (max-width: 550px) {
