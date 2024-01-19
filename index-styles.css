@@ -166,6 +166,24 @@ header {
 /* About me */
 /* Resume/CV */
 
+.button {
+  padding: 1em;
+  border: none;
+  border-radius: 0.69em;
+  background-color: #4b75d7;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1em;
+  box-shadow: 0 0 50px 6px rgba(69, 69, 69, 0.25);
+  transition: all 0.2s;
+}
+.button:hover {
+  background-color: #2d498b;
+}
+.button:active {
+  background-color: #192d59;
+}
+
 /* sections */
 
 .section {
