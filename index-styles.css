@@ -133,13 +133,11 @@ header {
   transition: all 0.36s ease;
 }
 #home-content #card-hover {
-  /* background-color: lightblue; */
   position: relative;
 }
 #home-content #card-img {
   border-radius: 20px;
   box-shadow: 0 0 12px 5px rgba(162, 224, 247, 0.4);
-  /* opacity: 0; */
 }
 #home-content #png-img {
   opacity: 0;
@@ -164,6 +162,9 @@ header {
 #home-content p {
   font-size: 0.74em;
 }
+
+/* About me */
+/* Resume/CV */
 
 /* sections */
 
