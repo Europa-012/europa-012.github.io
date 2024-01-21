@@ -8,6 +8,29 @@ body {
   user-select: none;
 }
 
+/* general sections */
+
+.content {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+}
+.home-home-content-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  padding: 2rem;
+  background-color: lightskyblue;
+}
+
 /* FOOTER */
 
 footer {
@@ -164,6 +187,9 @@ header {
 }
 
 /* About me */
+
+
+
 /* Resume/CV */
 
 .button {
@@ -182,30 +208,6 @@ header {
 }
 .button:active {
   background-color: #192d59;
-}
-
-/* sections */
-
-.section {
-  padding: 2rem;
-  background-color: lightskyblue;
-}
-
-
-.content {
-  max-width: 800px;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  column-gap: 50px;
-}
-.content-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Add styles for other sections, links, and interactive elements as needed */
