@@ -8,7 +8,7 @@ body {
   /* user-select: none; */
 }
 
-/* general sections */
+/* general flexes */
 
 .flex-row {
   max-width: 800px;
@@ -129,25 +129,28 @@ footer p {
   align-items: center;
   justify-content: center;
 }
-#home-content {
+#home-content-box {
   text-align: center;
   font-size: 2em;
   margin: 0;
 }
 
 /* CARD HOVER EFFECT */
-#home-content .card {
+#home-content-box .card, #card-img {
   height: 6em;
-  transition: all 0.36s ease;
+  transition:
+    opacity 0.36s ease,
+    transform 0.36s ease,
+    filter 0.36s ease;
 }
-#home-content #card-hover-effect-area {
+#home-content-box #card-hover-effect-area {
   position: relative;
 }
-#home-content #card-img {
+#home-content-box #card-img {
   border-radius: 20px;
   box-shadow: 0 0 12px 5px rgba(162, 224, 247, 0.4);
 }
-#home-content #png-img {
+#home-content-box #png-img {
   opacity: 0;
   position: absolute;
   left: 0;
@@ -158,19 +161,19 @@ footer p {
   -ms-mask-image: linear-gradient(to top, transparent 0%, white 7%);
   mask-image: linear-gradient(to top, transparent 0%, white 7%);
 }
-#home-content #card-hover-effect-area:hover > #card-img {
+#home-content-box #card-hover-effect-area:hover > #card-img {
   transform: perspective(900px) translateY(9.7%) rotateX(50deg) translateZ(0);
   filter: brightness(33%);
 }
-#home-content #card-hover-effect-area:hover > #png-img {
+#home-content-box #card-hover-effect-area:hover > #png-img {
   opacity: 1;
   transform: scale(1.1, 1.1) translateX(7%) translateY(-10%);
 }
 
-#home-content h1, #home-content p {
+#home-content-box h1, #home-content-box p {
   margin: 0;
 }
-#home-content p {
+#home-content-box p {
   font-size: 0.74em;
 }
 
@@ -247,7 +250,7 @@ the void.....
     row-gap: 50px;
     column-gap: 0;
   }
-  #home-content {
+  #home-content-box {
     flex-direction: column-reverse;
   }
 }
@@ -263,12 +266,12 @@ the void.....
 }
 
 @media screen and (min-width: 1200px) {
-  .section {
+  #home {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1500px) {
-  .section {
+  #home {
     font-size: 1.5em;
   }
   .flex-row {
@@ -276,7 +279,7 @@ the void.....
   }
 }
 @media screen and (min-width: 1800px) {
-  .section {
+  #home {
     font-size: 2em;
   }
 }
