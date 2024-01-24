@@ -25,10 +25,6 @@ body {
   padding: 100px 50px;
 }
 
-#about-me {
-  background-color: lightblue;
-}
-
 /* HEADER */
 
 header {
@@ -186,9 +182,35 @@ footer p {
   font-size: 0.74em;
 }
 
+/* arrow */
+
+#arrow-box {
+  position: absolute;
+  bottom: 20px;
+  padding: 25px;
+}
+#arrow {
+  width: 25px;
+  height: 25px;
+  border: solid #f1f1f1;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: relative;
+  transition: all 0.36s ease;
+}
+#arrow-box:hover > #arrow {
+  transform: translateY(20px) rotate(45deg);
+  -webkit-transform: translateY(20px) rotate(45deg);
+}
+
 /* About me */
 
-
+#about-me {
+  background-color: lightblue;
+}
 
 /* Resume/CV */
 
