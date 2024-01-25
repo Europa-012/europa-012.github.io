@@ -140,6 +140,13 @@ footer p {
   margin: 0;
 }
 
+#home-content-box h1, #home-content-box p {
+  margin: 0;
+}
+#home-content-box p {
+  font-size: 0.74em;
+}
+
 /* CARD HOVER EFFECT */
 #home-content-box .card, #card-img {
   height: 6em;
@@ -174,13 +181,13 @@ footer p {
   opacity: 1;
   transform: scale(1.1, 1.1) translateX(7%) translateY(-10%);
 }
-
-#home-content-box h1, #home-content-box p {
-  margin: 0;
+/* #home-content-box #card-hover-effect-area:active > #card-img {
+  transform: perspective(900px) rotateY(180deg);
+  filter: brightness(100%);
 }
-#home-content-box p {
-  font-size: 0.74em;
-}
+#home-content-box #card-hover-effect-area:active > #png-img {
+  opacity: 0;
+} */
 
 /* arrow */
 
