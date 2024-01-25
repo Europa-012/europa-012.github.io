@@ -218,6 +218,27 @@ footer p {
 #about-me {
   background-color: lightblue;
 }
+.about-me-row {
+  /* part of .flex-row class */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  column-gap: 50px;
+  /* end of copy of .flex-row class */
+  flex-direction: row;
+  /* tests */
+  border: solid;
+  background-color: pink;
+  /* tests end */
+  align-items: stretch;
+}
+.about-me-cards {
+  border: solid;
+  padding: 20px;
+  width: 20%;
+  margin: 0;
+}
 
 /* Resume/CV */
 
