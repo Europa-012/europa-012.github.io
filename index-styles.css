@@ -216,21 +216,11 @@ footer p {
 /* About me */
 
 #about-me {
+  /* to change */
   background-color: lightblue;
 }
 .about-me-row {
-  /* part of .flex-row class */
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  column-gap: 50px;
-  /* end of copy of .flex-row class */
   flex-direction: row;
-  /* tests */
-  border: solid;
-  background-color: pink;
-  /* tests end */
   align-items: stretch;
 }
 .about-me-cards {
@@ -238,6 +228,17 @@ footer p {
   padding: 20px;
   width: 20%;
   margin: 0;
+  display: flex;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  transition: all 0.36s ease;
+}
+.about-me-cards p {
+  margin: auto;
+  padding: 0;
+}
+.about-me-cards:hover {
+  box-shadow: 0 0 10px 10px rgba(132, 132, 132, 0.5);
 }
 
 /* Resume/CV */
