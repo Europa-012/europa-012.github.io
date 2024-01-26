@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  user-select: none;
+  /* user-select: none; */
   /* default colors */
   background-color: var(--dark-primary);
 }
@@ -60,7 +60,7 @@ body, a, #hamburger-menu {
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-/* general flexes and sections */
+/* ` flexes and sections */
 .flex-row,
 .flex-col {
   margin: auto;
@@ -73,6 +73,9 @@ body, a, #hamburger-menu {
 .flex-col { flex-direction: column; }
 .subsection {
   padding: 100px 50px;
+}
+.blue-text {
+  color: var(--dark-secondary);
 }
 
 /* HEADER */
@@ -91,6 +94,7 @@ header {
     var(--dark-primary),
     transparent
   );
+  z-index: 1000;
 }
 
 #logo, #nav-list {
