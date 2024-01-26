@@ -148,6 +148,7 @@ header {
     transform: translateX(0px);
     font-weight: 800;
     font-size: 1.2em;
+    color: var(--dark-secondary);
 }
 
 /* FOOTER */
@@ -166,6 +167,7 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 #home-content-box {
   text-align: center;
@@ -246,19 +248,17 @@ footer p {
 }
 
 /* About me */
-
-#about-me {
-  /* to change */
-  background-color: var(--dark-primary);
-}
-.about-me-row {
-  flex-direction: row;
+#about-me-row {
+  /* flex-direction: row; */
   align-items: stretch;
+  /* overflow-y: auto; */
 }
 .about-me-cards {
-  border: solid;
+  /* border: solid; */
+  background-color: var(--dark-secondary);
   padding: 20px;
   width: 20%;
+  min-width: 169px;
   margin: 0;
   display: flex;
   aspect-ratio: 16 / 9;
