@@ -21,7 +21,7 @@ body {
 }
 
 /* everything COLOR */
-body, a, #hamburger-menu {
+body, a, button, #hamburger-menu {
   color: white;
 }
 /* everything SHADOW */
@@ -155,6 +155,9 @@ header {
     font-size: 1.2em;
     color: var(--dark-secondary);
 }
+#nav-list a:active:before, #nav-list a:active:after {
+  color: var(--dark-tertiary)
+}
 
 /* FOOTER */
 footer {
@@ -250,6 +253,10 @@ footer p {
 #arrow-box:hover > #arrow {
   transform: translateY(20px) rotate(45deg);
   -webkit-transform: translateY(20px) rotate(45deg);
+  border: solid var(--dark-secondary);
+}
+#arrow-box:active > #arrow {
+  border: solid var(--dark-tertiary);
 }
 
 /* About me */
@@ -259,7 +266,6 @@ footer p {
   /* overflow-y: auto; */
 }
 .about-me-cards {
-  /* border: solid; */
   background-color: var(--dark-secondary);
   padding: 20px;
   width: 20%;
@@ -275,7 +281,8 @@ footer p {
   padding: 0;
 }
 .about-me-cards:hover {
-  box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.18);
+  /* box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.18); */
+  background-color: var(--dark-tertiary);
 }
 /* todo OVERFLOW */
 
@@ -284,19 +291,20 @@ footer p {
 .button {
   padding: 1em 2em;
   border: none;
-  border-radius: 0.69em;
+  border-radius: 12px;
   background-color: var(--dark-secondary);
-  color: #fff;
   font-weight: 600;
   font-size: 1em;
   box-shadow: 0 0 50px 6px rgba(69, 69, 69, 0.25);
   transition: all 0.36s;
 }
 .button:hover {
-  box-shadow: inset 0 0 0 5em rgba(255, 255, 255, 0.18);
+  /* box-shadow: inset 0 0 0 5em rgba(255, 255, 255, 0.18); */
+  background-color: var(--dark-tertiary);
 }
 .button:active {
-  box-shadow: inset 0 0 0 5em rgba(0, 0, 0, 0.18);
+  /* box-shadow: inset 0 0 0 5em rgba(0, 0, 0, 0.18); */
+  background-color: var(--dark-quaternary);
 }
 
 /* Add styles for other sections, links, and interactive elements as needed */
