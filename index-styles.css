@@ -242,8 +242,8 @@ footer p {
   width: 1em;
   position: absolute;
   animation: slide 3s infinite;
-  bottom: -69px;
-  right: -50px;
+  bottom: -50px;
+  right: -40px;
 }
 #home-content-box #card-hover-effect-area:hover > #pointer-anim {
   display: none;
