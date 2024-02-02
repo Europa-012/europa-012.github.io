@@ -8,6 +8,15 @@
   --light-secondary: #B4D4FF;
   --light-tertiary: #86B6F6;
   --light-quaternary: #176B87;
+  
+  /* coolors  */
+  --pacific-cyan: #2fa9cbff;
+  --turquoise: #2bcdbbff;
+  --bice-blue: #0a6b9aff;
+  --caribbean-current: #0e5e68ff;
+  --midnight-green: #123d47ff;
+  --ash-gray: #a4b196ff;
+  --jet: #2c2d32ff;
 }
 
 body {
