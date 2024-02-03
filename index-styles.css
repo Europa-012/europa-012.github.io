@@ -281,11 +281,13 @@ footer p {
 
 /* About me */
 .scroll-x {
-  min-width: 850px;
-  overflow-x: auto;
+  overflow-y: auto;
+  width: 100%;
+}
+.scroll-x-content {
+  min-width: 1000px;
 }
 #about-me-row {
-  /* flex-direction: row; */
   align-items: stretch;
 }
 .about-me-cards {
