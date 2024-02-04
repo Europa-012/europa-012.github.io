@@ -292,7 +292,7 @@ footer p {
   padding-bottom: 20px;
 }
 .scroll-x-content {
-  min-width: 1000px;
+  min-width: fit-content;
 }
 #about-me-row {
   align-items: stretch;
