@@ -1,3 +1,5 @@
+/* * {border: solid 1px;} */
+
 :root {
   --dark-primary: #2C2D32;
   /* --dark-secondary: #1F4287; */
@@ -78,6 +80,10 @@ body, a, button, #hamburger-menu {
 }
 .blue-text {
   color: var(--dark-secondary);
+}
+
+.row-switch {
+  width: 100%;
 }
 
 /* HEADER */
@@ -317,7 +323,7 @@ footer p {
 .bar {
   background-color: var(--dark-tertiary);
   border-radius: 15px;
-  width: 75dvw;
+  max-width: 75dvw;
   padding: 1em 2em;
   color: var(--dark-primary);
   text-align: center;
@@ -428,6 +434,9 @@ the void.....
 @media screen and (max-width: 450px) {
   #nav-list ul li:nth-last-child(5) {
     display: none;
+  }
+  .row-switch {
+    flex-direction: column;
   }
 }
 
