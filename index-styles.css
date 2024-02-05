@@ -230,6 +230,9 @@ footer p {
   opacity: 1;
   transform: scale(1.1, 1.1) translateX(7%) translateY(-10%);
 }
+#home-content-box #card-hover-effect-area:hover {
+  cursor: pointer;
+}
 /* card click feature */
 /* #home-content-box #card-hover-effect-area:active > #card-img {
   transform: perspective(900px) rotateY(180deg);
