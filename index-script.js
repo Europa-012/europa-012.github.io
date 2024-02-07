@@ -11,4 +11,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// Header hamburger menu
+
 // Additional JavaScript for form validation or other interactions

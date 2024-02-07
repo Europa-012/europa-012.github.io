@@ -409,6 +409,7 @@ the void.....
 
 /* media queries */
 
+/* header + nav breakpoints */
 @media screen and (max-width: 420px) {
   #hamburger-menu {
     display: block;
@@ -462,6 +463,7 @@ the void.....
   }
 }
 
+/* home breakpoints */
 @media screen and (min-width: 1200px) {
   #home {
     font-size: 1.2em;
