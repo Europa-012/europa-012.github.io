@@ -35,6 +35,11 @@ body {
 body, a, button, #hamburger-menu {
   color: white;
 }
+#hamburger-menu {
+  background-color: transparent;
+  border: none;
+  font-size: 1.4em;
+}
 /* everything SHADOW */
 #home-content-box #card-img, .button {
   box-shadow:
@@ -410,6 +415,9 @@ the void.....
     margin-right: 2em;
   }
   #nav-list ul li:last-child {
+    display: none;
+  }
+  #nav-list {
     display: none;
   }
 }
