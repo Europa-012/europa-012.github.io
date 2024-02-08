@@ -410,20 +410,7 @@ the void.....
 /* media queries */
 
 /* header + nav breakpoints */
-@media screen and (max-width: 420px) {
-  #hamburger-menu {
-    display: block;
-    margin-right: 1em;
-  }
-  #nav-list ul li:last-child {
-    display: none;
-  }
-  #nav-list {
-    width: 0;
-    margin: 0;
-  }
-}
-@media screen and (max-width: 850px) {
+/* @media screen and (max-width: 850px) {
   #hamburger-menu {
     display: block;
     margin-right: 1em;
@@ -462,6 +449,19 @@ the void.....
     display: none;
   }
 }
+@media screen and (max-width: 420px) {
+  #hamburger-menu {
+    display: block;
+    margin-right: 1em;
+  }
+  #nav-list ul li:last-child {
+    display: none;
+  }
+  #nav-list {
+    width: 0;
+    margin: 0;
+  }
+} */
 
 /* home breakpoints */
 @media screen and (min-width: 1200px) {
