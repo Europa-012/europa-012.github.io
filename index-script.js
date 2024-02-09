@@ -36,67 +36,9 @@ let navList = [
   },
 ];
 
-function renderList() {
+function updateNavList() {
   // TODO
 }
-/*
-
-Breakpoints:
-
-@media screen and (max-width: 850px) {
-  #hamburger-menu {
-    display: block;
-    margin-right: 1em;
-  }
-  #nav-list ul li:last-child {
-    display: none;
-  }
-}
-@media screen and (max-width: 750px) {
-  #nav-list ul li:nth-last-child(2) {
-    display: none;
-  }
-}
-@media screen and (max-width: 650px) {
-  #nav-list ul li:nth-last-child(3) {
-    display: none;
-  }
-  .flex-row {
-    row-gap: 0;
-    column-gap: 20px;
-  }
-  #home-content-box {
-    flex-direction: column-reverse;
-  }
-}
-@media screen and (max-width: 550px) {
-  #nav-list ul li:nth-last-child(4) {
-    display: none;
-  }
-  .row-switch {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 450px) {
-  #nav-list ul li:nth-last-child(5) {
-    display: none;
-  }
-}
-@media screen and (max-width: 420px) {
-  #hamburger-menu {
-    display: block;
-    margin-right: 1em;
-  }
-  #nav-list ul li:last-child {
-    display: none;
-  }
-  #nav-list {
-    width: 0;
-    margin: 0;
-  }
-}
-
-*/
 
 // function adjustNav() {
 //   const navList = document.getElementById('nav-list').getElementsByTagName('ul')[0];
