@@ -36,8 +36,22 @@ let navList = [
   },
 ];
 
+// renderNavList();
+updateNavList();
+
 function updateNavList() {
-  // TODO
+  let navListHTML = '';
+
+  navList.forEach(navListItem => {
+    const { link, text } = navListItem;
+    const itemHTML = `
+      <li><a href="${navListItem.link}">${navListItem.text}</a></li>
+    `;
+    // append
+    navListHTML += itemHTML;
+  });
+
+  document.getElementById('js-nav-list-ul').innerHTML = navListHTML;
 }
 
 // function adjustNav() {
