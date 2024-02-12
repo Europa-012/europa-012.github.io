@@ -35,48 +35,30 @@ let navList = [
     text: 'Contact'
   },
 ];
+let itemsOnScreen = navList.length;
+console.log(itemsOnScreen);
+
 
 // renderNavList();
-updateNavList();
+renderNavList();
 
-function updateNavList() {
+function renderNavList() {
   let navListHTML = '';
 
-  navList.forEach(navListItem => {
-    const { link, text } = navListItem;
+  for (i=0; i<navList.length; i++) {
+    const navListItem = navList[i];
     const itemHTML = `
       <li><a href="${navListItem.link}">${navListItem.text}</a></li>
     `;
     // append
     navListHTML += itemHTML;
-  });
+  }
 
   document.getElementById('js-nav-list-ul').innerHTML = navListHTML;
 }
 
-// function adjustNav() {
-//   const navList = document.getElementById('nav-list').getElementsByTagName('ul')[0];
-//   const navItems = navList.getElementsByTagName('li');
-//   const lastItem = navItems[navItems.length -  1];
 
-//   // Get the viewport width
-//   let vpWidth = window.innerWidth || document.documentElement.clientWidth;
 
-//   // Check the viewport width and hide/show the last item accordingly
-//   if (vpWidth <=  450) {
-//     lastItem.style.display = 'none'; // Hide the last item
-//   } else {
-//     lastItem.style.display = ''; // Show the last item
-//   }
-//   console.log(navList + " & " + navItems + " & " + lastItem);
-//   console.log(vpWidth);
-// }
-
-// // Call the function initially to set the correct state
-// adjustNav();
-
-// // Listen for resize events
-// window.addEventListener('resize', adjustNav);
 
 
 // Additional JavaScript for form validation or other interactions
