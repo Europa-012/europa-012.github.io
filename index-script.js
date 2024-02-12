@@ -1,5 +1,3 @@
-// Add any interactive elements or transitions here
-
 // Header hamburger menu
 
 let navList = [
@@ -27,7 +25,7 @@ let navList = [
 let itemsOnScreen = navList.length;
 console.log(itemsOnScreen);
 
-
+// RENDER NAVLIST
 renderNavList();
 
 function renderNavList() {
@@ -48,7 +46,7 @@ function renderNavList() {
 
 
 
-// Example smooth scroll using JavaScript
+// smooth scroll. DO NOT TOUCH
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
