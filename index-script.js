@@ -57,5 +57,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// detect resizes
+window.addEventListener('resize', function() {
+
+  // test
+  var width = window.innerWidth;
+  var height = window.innerHeight;
+  this.document.getElementById('test').innerHTML = `W = ${width} x H = ${height}`;
+
+  
+});
+
 
 // Additional JavaScript for form validation or other interactions
