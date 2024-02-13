@@ -57,15 +57,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+let hamburgerMenu = getElementById('hamburger-menu');
+
 // detect resizes
 window.addEventListener('resize', function() {
 
-  // test
   var width = window.innerWidth;
+
+  // test
   var height = window.innerHeight;
   this.document.getElementById('test').innerHTML = `W = ${width} x H = ${height}`;
 
-  
+  if (width < 850) {
+    // hamburgerMenu.
+  }
   
 });
 
