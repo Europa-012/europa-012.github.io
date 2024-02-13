@@ -452,20 +452,16 @@ the void.....
   #nav-list ul li:nth-last-child(3) {
     display: none;
   }
-  .flex-row {
-    row-gap: 0;
-    column-gap: 20px;
-  }
   #home-content-box {
     flex-direction: column-reverse;
+  }
+  .row-switch {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 550px) {
   #nav-list ul li:nth-last-child(4) {
     display: none;
-  }
-  .row-switch {
-    flex-direction: column;
   }
 }
 @media screen and (max-width: 450px) {
@@ -486,6 +482,9 @@ the void.....
     margin: 0;
   }
 }
+
+
+
 
 /* home breakpoints */
 @media screen and (min-width: 1200px) {

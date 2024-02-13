@@ -66,6 +66,7 @@ window.addEventListener('resize', function() {
   this.document.getElementById('test').innerHTML = `W = ${width} x H = ${height}`;
 
   
+  
 });
 
 
