@@ -2,22 +2,27 @@
 
 let navList = [
   {
+    id: 'js-home',
     link: '#home',
     text: 'Home'
   },
   {
+    id: 'js-portfolio',
     link: '#portfolio',
     text: 'Portfolio'
   },
   {
+    id: 'js-about-me',
     link: '#about-me',
     text: 'About Me'
   },
   {
+    id: 'js-resume',
     link: '#resume_and_contact',
     text: 'Resume'
   },
   {
+    id: 'js-contact',
     link: '#resume_and_contact',
     text: 'Contact'
   },
@@ -31,10 +36,10 @@ renderNavList();
 function renderNavList() {
   let navListHTML = '';
 
-  for (i=0; i<navList.length; i++) {
+  for (i = 0; i < navList.length; i++) {
     const navListItem = navList[i];
     const itemHTML = `
-      <li><a href="${navListItem.link}">${navListItem.text}</a></li>
+      <li id="${navListItem.id}"><a href="${navListItem.link}">${navListItem.text}</a></li>
     `;
     // append
     navListHTML += itemHTML;
