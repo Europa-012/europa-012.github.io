@@ -435,23 +435,23 @@ the void.....
 /* header + nav breakpoints */
 
 @media screen and (max-width: 850px) {
-  #hamburger-menu {
+  /* #hamburger-menu {
     display: block;
     margin-right: 1em;
   }
   #nav-list ul li:last-child {
     display: none;
-  }
+  } */
 }
 @media screen and (max-width: 750px) {
-  #nav-list ul li:nth-last-child(2) {
+  /* #nav-list ul li:nth-last-child(2) {
     display: none;
-  }
+  } */
 }
 @media screen and (max-width: 650px) {
-  #nav-list ul li:nth-last-child(3) {
+  /* #nav-list ul li:nth-last-child(3) {
     display: none;
-  }
+  } */
   #home-content-box {
     flex-direction: column-reverse;
   }
@@ -460,17 +460,17 @@ the void.....
   }
 }
 @media screen and (max-width: 550px) {
-  #nav-list ul li:nth-last-child(4) {
+  /* #nav-list ul li:nth-last-child(4) {
     display: none;
-  }
+  } */
 }
 @media screen and (max-width: 450px) {
-  #nav-list ul li:nth-last-child(5) {
+  /* #nav-list ul li:nth-last-child(5) {
     display: none;
-  }
+  } */
 }
 @media screen and (max-width: 420px) {
-  #hamburger-menu {
+  /* #hamburger-menu {
     display: block;
     margin-right: 1em;
   }
@@ -480,7 +480,7 @@ the void.....
   #nav-list {
     width: 0;
     margin: 0;
-  }
+  } */
 }
 
 
