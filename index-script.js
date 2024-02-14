@@ -62,7 +62,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-let hamburgerMenu = getElementById('hamburger-menu');
+// header tabs/links
+let homeTabElement = document.getElementById('js-home');
+let portfolioTabElement = document.getElementById('js-portfolio');
+let aboutMeTabElement = document.getElementById('js-about-me');
+let resumeTabElement = document.getElementById('js-resume');
+let contactTabElement = document.getElementById('js-contact');
+let hamburgerMenuElement = document.getElementById('hamburger-menu');
 
 // detect resizes
 window.addEventListener('resize', function() {
@@ -74,7 +80,9 @@ window.addEventListener('resize', function() {
   this.document.getElementById('test').innerHTML = `W = ${width} x H = ${height}`;
 
   if (width < 850) {
-    // hamburgerMenu.
+    hamburgerMenuElement.style.display = "block";
+    hamburgerMenuElement.style.marginRight = "1em";
+    contactTabElement.style.display = "none";
   }
   
 });
