@@ -4,31 +4,38 @@ let navList = [
   {
     id: 'js-home',
     link: '#home',
-    text: 'Home'
+    text: 'Home',
+    inHeader: true
   },
   {
     id: 'js-portfolio',
     link: '#portfolio',
-    text: 'Portfolio'
+    text: 'Portfolio',
+    inHeader: true
   },
   {
     id: 'js-about-me',
     link: '#about-me',
-    text: 'About Me'
+    text: 'About Me',
+    inHeader: true
   },
   {
     id: 'js-resume',
     link: '#resume_and_contact',
-    text: 'Resume'
+    text: 'Resume',
+    inHeader: true
   },
   {
     id: 'js-contact',
     link: '#resume_and_contact',
-    text: 'Contact'
+    text: 'Contact',
+    inHeader: true
   },
 ];
+
+//test
 let itemsOnScreen = navList.length;
-console.log(itemsOnScreen);
+console.log('itemsOnScreen: ' + itemsOnScreen);
 
 // RENDER NAVLIST
 renderNavList();
@@ -36,17 +43,88 @@ renderNavList();
 function renderNavList() {
   let navListHTML = '';
 
-  for (i = 0; i < navList.length; i++) {
-    const navListItem = navList[i];
+  navList.forEach(navListItem => {
+    if (navListItem.inHeader == false) {
+      return;
+    }
+    
     const itemHTML = `
       <li id="${navListItem.id}"><a href="${navListItem.link}">${navListItem.text}</a></li>
-    `;
+    `
     // append
     navListHTML += itemHTML;
-  }
+  });
 
   document.getElementById('js-nav-list-ul').innerHTML = navListHTML;
 }
+
+
+
+
+// ====================================
+
+// header tabs/links
+// let homeTabElement = document.getElementById('js-home');
+// let portfolioTabElement = document.getElementById('js-portfolio');
+// let aboutMeTabElement = document.getElementById('js-about-me');
+// let resumeTabElement = document.getElementById('js-resume');
+// let contactTabElement = document.getElementById('js-contact');
+
+let navListElement = document.getElementById('nav-list');
+let hamburgerMenuElement = document.getElementById('hamburger-menu');
+
+// let tabsInMenu = [];
+
+// detect resizes
+let width = window.innerWidth;
+let height = window.innerHeight;
+
+window.addEventListener('resize', function() {
+
+  width = window.innerWidth;
+
+  // test
+  height = window.innerHeight;
+  this.document.getElementById('test').innerHTML = `W = ${width} x H = ${height}`;
+
+  if (width < 850) {
+    hamburgerMenuElement.style.display = "block";
+    hamburgerMenuElement.style.marginRight = "1em";
+    navList[4].inHeader = false;
+  } else {
+    hamburgerMenuElement.style.display = "none";
+    hamburgerMenuElement.style.marginRight = "0";
+    navList[4].inHeader = true;
+  }
+
+  navList[3].inHeader = width >= 750;
+  navList[2].inHeader = width >= 650;
+  navList[1].inHeader = width >= 550;
+  navList[0].inHeader = width >= 450;
+  
+  if (width < 650) {
+    // aboutMeTabElement.style.display = "none";
+  }
+  if (width < 550) {
+    // portfolioTabElement.style.display = "none";
+  }
+  if (width < 450) {
+    // homeTabElement.style.display = "none;"
+  }
+  if (width < 420) {
+    navListElement.style.width = 0;
+    navListElement.style.margin = 0;
+  }
+
+
+  // console.log('tabsInMenu: ' + tabsInMenu); //test
+  // render it navList again and again
+  renderNavList();
+  
+});
+
+
+
 
 
 
@@ -61,58 +139,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
-
-// header tabs/links
-let navListElement = document.getElementById('nav-list');
-let homeTabElement = document.getElementById('js-home');
-let portfolioTabElement = document.getElementById('js-portfolio');
-let aboutMeTabElement = document.getElementById('js-about-me');
-let resumeTabElement = document.getElementById('js-resume');
-let contactTabElement = document.getElementById('js-contact');
-let hamburgerMenuElement = document.getElementById('hamburger-menu');
-
-let tabsInMenu = [];
-
-// detect resizes
-window.addEventListener('resize', function() {
-
-  var width = window.innerWidth;
-
-  // test
-  var height = window.innerHeight;
-  this.document.getElementById('test').innerHTML = `W = ${width} x H = ${height}`;
-
-  if (width < 850) {
-    hamburgerMenuElement.style.display = "block";
-    hamburgerMenuElement.style.marginRight = "1em";
-    contactTabElement.style.display = "none";
-    tabsInMenu++;
-  } else {
-    hamburgerMenuElement.style.display = "none";
-    hamburgerMenuElement.style.marginRight = "0";
-    contactTabElement.style.display = "block";
-  }
-  if (width < 750) {
-    resumeTabElement.style.display = "none";
-  }
-  if (width < 650) {
-    aboutMeTabElement.style.display = "none";
-  }
-  if (width < 550) {
-    portfolioTabElement.style.display = "none";
-  }
-  if (width < 450) {
-    homeTabElement.style.display = "none;"
-  }
-  if (width < 420) {
-    navListElement.style.width = 0;
-    navListElement.style.margin = 0;
-  }
-
-
-  console.log(tabsInMenu); //test
-  
-});
-
-
-// Additional JavaScript for form validation or other interactions
