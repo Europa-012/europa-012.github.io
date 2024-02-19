@@ -55,7 +55,7 @@ function renderNavList() {
 }
 
 let navListElement = document.getElementById('nav-list');
-let hamburgerMenuElement = document.getElementById('hamburger-menu');
+const hamburgerMenuElement = document.getElementById('hamburger-menu');
 
 // detect resizes
 let width = window.innerWidth;
@@ -86,9 +86,16 @@ window.addEventListener('resize', function() {
 
   navListElement.style.display = (width < 420) ? "none" : "block";
 
-  renderNavList();
+  // renderNavList();
   
 });
+
+
+// mobile menu click
+hamburgerMenuElement.addEventListener('click', function() {
+  // Your code to execute when the hamburger menu is clicked
+});
+
 
 
 

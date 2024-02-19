@@ -90,7 +90,7 @@ body, a, button, #hamburger-menu {
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-/* ` flexes and sections */
+/* flexes and sections */
 .flex-row,
 .flex-col {
   margin: auto;
@@ -117,12 +117,11 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
+  padding: 0 1.5em;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* color: white; */
+  background-color: transparent;
   background: linear-gradient(
     to bottom,
     var(--dark-primary),
@@ -133,7 +132,6 @@ header {
 
 #logo, #nav-list {
   text-wrap: nowrap;
-  margin: 0 1.5em;
 }
 #logo {
   font-weight: 800;
@@ -343,9 +341,7 @@ footer p {
 }
 .about-me-cards:hover {
   box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.18);
-  /* background-color: var(--dark-tertiary); */
 }
-/* todo OVERFLOW */
 
 /* Resume/CV */
 
@@ -388,24 +384,20 @@ footer p {
   border-radius: 20px;
   padding: 4px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 20px;
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #777;
 }
-/* Add styles for other sections, links, and interactive elements as needed */
 
 /* 
 
