@@ -58,22 +58,8 @@ function renderNavList() {
   document.getElementById('js-nav-list-ul').innerHTML = navListHTML;
 }
 
-
-
-
-// ====================================
-
-// header tabs/links
-// let homeTabElement = document.getElementById('js-home');
-// let portfolioTabElement = document.getElementById('js-portfolio');
-// let aboutMeTabElement = document.getElementById('js-about-me');
-// let resumeTabElement = document.getElementById('js-resume');
-// let contactTabElement = document.getElementById('js-contact');
-
 let navListElement = document.getElementById('nav-list');
 let hamburgerMenuElement = document.getElementById('hamburger-menu');
-
-// let tabsInMenu = [];
 
 // detect resizes
 let width = window.innerWidth;
@@ -101,31 +87,12 @@ window.addEventListener('resize', function() {
   navList[2].inHeader = width >= 650;
   navList[1].inHeader = width >= 550;
   navList[0].inHeader = width >= 450;
-  
-  if (width < 650) {
-    // aboutMeTabElement.style.display = "none";
-  }
-  if (width < 550) {
-    // portfolioTabElement.style.display = "none";
-  }
-  if (width < 450) {
-    // homeTabElement.style.display = "none;"
-  }
-  if (width < 420) {
-    navListElement.style.width = 0;
-    navListElement.style.margin = 0;
-  }
 
+  navListElement.style.display = (width < 420) ? "none" : "block";
 
-  // console.log('tabsInMenu: ' + tabsInMenu); //test
-  // render it navList again and again
   renderNavList();
   
 });
-
-
-
-
 
 
 
