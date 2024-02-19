@@ -436,9 +436,11 @@ the void.....
 @media screen and (max-width: 650px) {
   #home-content-box {
     flex-direction: column-reverse;
+    gap: 30px;
   }
   .row-switch {
     flex-direction: column;
+    gap: 30px;
   }
 }
 
