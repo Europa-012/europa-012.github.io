@@ -33,10 +33,6 @@ let navList = [
   },
 ];
 
-//test
-let itemsOnScreen = navList.length;
-console.log('itemsOnScreen: ' + itemsOnScreen);
-
 // RENDER NAVLIST
 renderNavList();
 
