@@ -63,13 +63,13 @@ const hamburgerMenuElement = document.getElementById('hamburger-menu');
 let width = window.innerWidth;
 let height = window.innerHeight;
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', () => {
 
   width = window.innerWidth;
 
   // test
-  height = window.innerHeight;
-  this.document.getElementById('test').innerHTML = `W = ${width} x H = ${height}`;
+  // height = window.innerHeight;
+  // this.document.getElementById('test').innerHTML = `W = ${width} x H = ${height}`;
 
   if (width < 850) {
     hamburgerMenuElement.style.display = "block";
