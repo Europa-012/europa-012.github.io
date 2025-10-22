@@ -81,14 +81,14 @@ body, a, button, #hamburger-menu {
 .subsection {
   position: relative;
 }
-.subsection:after {
+/* .subsection:after {
   content: "";
   position: absolute;
   bottom: 0;
   height: 1px;
   width: 80%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-}
+} */
 
 /* flexes and sections */
 .flex-row,
@@ -97,12 +97,13 @@ body, a, button, #hamburger-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 50px;
+  column-gap: 20px;
 }
 .flex-row { flex-direction: row; }
 .flex-col { flex-direction: column; }
 .subsection {
-  padding: 100px 50px;
+  /* padding: 100px 50px; */
+  padding: 50px 0px;
 }
 .blue-text {
   color: var(--dark-secondary);
@@ -238,7 +239,7 @@ footer p {
   position: relative;
 }
 #home-content-box #card-img {
-  border-radius: 20px;
+  border-radius: 8px;
 }
 #home-content-box #png-img {
   opacity: 0;
@@ -337,7 +338,7 @@ footer p {
   margin: 0;
   display: flex;
   aspect-ratio: 16 / 9;
-  border-radius: 12px;
+  border-radius: 4px;
   transition: all 0.36s;
 }
 .about-me-cards p {
@@ -347,13 +348,17 @@ footer p {
 .about-me-cards:hover {
   box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.18);
 }
+.subsection h3 {
+  margin: 0;
+}
 
 /* Resume/CV */
 
 .bar {
   background-color: var(--dark-tertiary);
-  border-radius: 15px;
-  max-width: 75dvw;
+  /* border-radius: 15px; */
+  /* max-width: 75dvw; */
+  width: 100%;
   padding: 1em 2em;
   color: var(--dark-primary);
   text-align: center;
@@ -364,7 +369,7 @@ footer p {
 .button {
   padding: 1em 2em;
   border: none;
-  border-radius: 12px;
+  border-radius: 4px;
   background-color: var(--dark-secondary);
   font-weight: 600;
   font-size: 1em;
