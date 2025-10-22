@@ -115,7 +115,11 @@ body, a, button, #hamburger-menu {
 
 /* HEADER */
 header {
-  position: fixed;
+  /* temp hidden */
+  display: none;
+
+
+  /* position: fixed;
   top: 0;
   width: 100%;
   padding: 0 2em;
@@ -128,7 +132,7 @@ header {
     var(--dark-primary),
     transparent
   );
-  z-index: 1000;
+  z-index: 1000; */
 }
 
 #logo, #nav-list {
@@ -330,7 +334,7 @@ footer p {
 #about-me-row {
   align-items: stretch;
 }
-.about-me-cards {
+.box-cards {
   background-color: var(--dark-secondary);
   padding: 20px;
   width: 20%;
@@ -341,11 +345,11 @@ footer p {
   border-radius: 4px;
   transition: all 0.36s;
 }
-.about-me-cards p {
+.box-cards p {
   margin: auto;
   padding: 0;
 }
-.about-me-cards:hover {
+.box-cards:hover {
   box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.18);
 }
 .subsection h3 {
